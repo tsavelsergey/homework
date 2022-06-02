@@ -7,30 +7,19 @@
 # In: 965 582 023 8 695210
 # Out: [5, 8, 15, 20, 23]
 
-# ls = [int(i) for i in input().split()]
-# ls_nums = []
-# #-------------------------------
-# # for num in ls:  # Var 1
-# #     sum_n = 0
-# #     while num != 0:
-# #         last = num % 10
-# #         sum_n += last
-# #         num = num // 10
-# #     ls_nums.append(sum_n)
-# # print(sorted(ls_nums))
-#
-# #-------------------------------
-#
-# def sum_num(num):  # Var 2
-#     sum_n = 0
-#     while num != 0:
-#         last = num % 10
-#         sum_n += last
-#         num = num // 10
-#     return sum_n
-# for n in ls:
-#     ls_nums.append(sum_num(n))
-# print(sorted(ls_nums))
+ls = [int(i) for i in input().split()]
+
+def sum_num(list_1):
+    ls_nums = []
+    for num in list_1:
+        sum_n = 0
+        while num != 0:
+            last = num % 10
+            sum_n += last
+            num = num // 10
+        ls_nums.append(sum_n)
+    return sorted(ls_nums)
+print(sum_num(ls))
 
 
 # Hometask_13_2
