@@ -7,6 +7,8 @@
 # In: 965 582 023 8 695210
 # Out: [5, 8, 15, 20, 23]
 
+
+
 ls = [int(i) for i in input().split()]
 
 def sum_num(list_1):
