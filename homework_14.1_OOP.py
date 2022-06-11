@@ -70,9 +70,7 @@ class Dog:
         return f"Dog can bark"
 
     def change_name(self, new_name):
-        n = self.name
         self.name = new_name
-        return f"{n} has a new nickname {self.name}" # Если понадобится вывести сообщение о смене клички
 
 if __name__ == '__main__':
     Jack = Dog(78, 30, "Jack", 3)
